@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Saeed Mahloujifar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154550150-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-154550150-1');
+	</script>
+
+
+     
+
+    </head>
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width:1320px
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.bio {
+
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+/* Clearfix (clear floats) */
+.bio_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 50%;*/
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+
+.row h2{
+    /*margin-left:px;*/
+    font-size:28px;
+    font-weight: bold 
+}
+
+.row h3{
+    /*margin-left:30px;*/
+    font-size:20px;
+    font-weight: bold 
+}
+
+.container{
+    font-size: 16px;
+}
+.feature-item {
+    margin-top:20px;
+    margin-left:25px;
+}
+.feature-item {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.feature-item li big {
+    font-size:19px;
+}
+.footer {
+   /*position: fixed;*/
+   height:600px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: lightgray;
+   color: white;
+   text-align: center;
+}
+
+</style>
+
+
+    <body>
+
+    
+
+    <header>
+        <div class="container">
+            <div class="row">
+
+                <div>
+                    <div id="navbar">
+
+                                        <!-- <li><a href="#banner">About me</a></li> -->
+                                        <a href="#bio">Bio</a>
+                                        <a href="#feature">Publications</a>
+                                        <a href="#utility-2">Contact</a>
+                                        <a href="cv.pdf">CV </a>
+                                        <a href="research_statement.pdf">Research Statement</a>
+                                        <a style="float:right" href="http://princeton.edu"><img src="images/pu-logo.jpg" width="160px"  style="margin-top: -20px;margin-bottom: -20px; margin-left: -5px; margin-right: -5px" alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+<!--     <div height:="10px">
+    </div> -->
+
+    <section id="banner" >
+        <div id="bio" class="container" style="padding-top: 100px">
+            <div class="row">
+
+                <div class="bio">
+                    <div>
+                        <img src="images/me.jpg" width="500px" height="500px" alt="">
+                    </div>
+                </div>
+                <div class="bio">
+                        <h1>
+				Saeed Mahloujifar
+                        </h1>
+
+                        <p>
+                            I am a Postdoctoral Research Fellow at  <a href="http://ece.princeton.edu">Electrical and Computer Engineering Depertment </a> of <a href="http://princeton.edu">Princeton University</a> working with <a href="http://princeton.edu/~pmittal">Prateek Mittal</a>. I received my Ph.D. from  <a href="http://cs.virginia.edu">Depertment of Computer Science </a> at <a href="http://virginia.edu">Universit of Virginia</a> in the summer of 2020. My Ph.D. advisor was  <a href="http://cs.virginia.edu/~mohammad">Mohammad Mahmoody</a>. Prior to UVa I got my B.Sc. degree in Computer Engineering from department of <a href="http://ce.sharif.edu">Computer Engineering</a> at <a href="http://www.en.sharif.edu/">Sharif University of Technology</a> in the summer of 2015. I also spent summers of 2019 and 2020 working as an Inten at Microsoft Research, Redmond. 
+
+                        <p> I am interested in security and privacy of machine learning and their interplay with foundations of cryptography.  
+
+                </div>
+            </div>
+        </div>
+    <!-- </section>
+    <section id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay=".8s">
+                    <h2 class="title">Research Interests</h2>
+
+                    <div class="feature-item">
+
+                        <div class="media">
+                            <div class="pull-left icon" href="#">
+                                <i class="fa fa-qrcode"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Cryptography</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+
+                        <div class="media">
+                            <div class="pull-left icon" href="#">
+                                <i class="fa fa-qrcode"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Adversarial Machine Learning</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+
+                        <div class="media">
+                            <div class="pull-left icon" href="#">
+                                <i class="fa fa-qrcode"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Computational Complexity</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="feature">
+        <div class="container">
+            <div class="row">
+                    <hr style="margin-top:50px; margin-bottom: 2px"><h2 class="title">Publications</h2><hr style="margin-top:-6px; margin-bottom: 20px">
+                    <p>* indicates equal contribution. [&alpha;&beta;] indicates alphabetical order.</p>
+	                <h3 class="title">Preprints</h3>
+
+                    <div class="feature-item">                  
+                        <li>                            
+                        <a  style = "color:#007bff; font-style:italic;"  href="https://arxiv.org/abs/2101.11073">
+                        <big>Property Inference from Poisoning </big></a>
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&alpha;&beta;] Melissa Chase, Esha Ghosh, Saeed Mahloujifar.
+                        </li>
+                    </div>
+                    
+                    <div class="feature-item">                  
+                        <li>                            
+                        <a  style = "color:#007bff; font-style:italic;"  href="https://arxiv.org/pdf/2003.12020.pdf">
+                        <big>Obliviousness Makes Poisoning Adversaries Weaker
+                        </big></a>
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&alpha;&beta;] Samuel Deng, Sanjam Garg, Somesh Jha, Saeed Mahloujifar, Mohammad Mahmoody, and Abhradeep Thakurta.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A preliminary version presented at the Uncertainty & Robustness in Deep Learning workshop at ICML 2020. 
+                        </li>
+                    </div>
+                    
+
+                    <h3 class="title">Conference Publications</h3>
+                        <div class="feature-item">                  
+                        <li>                            
+                        <a  style = "color:#007bff; font-style:italic;"  href="https://arxiv.org/pdf/2011.05315.pdf">
+                        <big>Is Private Learning Possible with Instance Encoding? </big></a>
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&alpha;&beta;] Nicholas Carlini, Samuel Deng, Sanjam Garg, Somesh Jha, Saeed Mahloujifar, Mohammad Mahmoody, Shuang Song, Abhradeep Thakurta, and Florian Tram&eacute;r .
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IEEE Symposium on Security and Privacy (<b>S&P</b>), 2021.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Also presented at the Privacy Preserving Machine Learning workshop at NeurIPS 2020.
+                        </li>
+                    </div>
+                    <div class="feature-item">                  
+                        <li>                            
+                        <a  style = "color:#007bff; font-style:italic;"  href="https://arxiv.org/abs/1906.05815">
+                        <big>Lower Bounds for Adversarially Robust PAC Learning under Evasion and Hybrid Attacks.</big></a>
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dimitrios Diochnos*, Saeed Mahloujifar*, and Mohammad Mahmoody.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; International Conference on Machine Learning and Applications (<b>ICMLA</b>), 2020.
+                        </li>
+                    </div>
+      				<div class="feature-item">
+						<li>                            
+						<a  style = "color:#007bff; font-style:italic;" href="https://arxiv.org/abs/1905.11564">
+						<big> Adversarially Robust Learning Could Leverage Computational Hardness</big></a>
+						<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [&alpha;&beta;] Somesh Jha, Sanjam Garg, Saeed Mahloujifar, and  Mohammad Mahmoody.
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Algorithmic Learning Theory (<b>ALT</b>), 2020.
+						</li>
+					</div>
+
+                    <div class="feature-item">                  
+                        <li>                            
+                        <a  style = "color:#007bff; font-style:italic;"  href="https://arxiv.org/abs/1907.05401">
+                        <big>Computational Concentration of Measure: Optimal Bounds,
+              Reductions, and More. </big></a>
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [&alpha;&beta;] Omid Etesami, Saeed Mahloujifar, and Mohammad Mahmoody.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ACM-SIAM Symposium on Discrete Algorithms (<b>SODA</b>), 2020.
+                        </li>
+                    </div>
+
+                    <div class="feature-item">                  
+                        <li>                            
+                        <a  style = "color:#007bff; font-style:italic;"  href="https://arxiv.org/abs/1905.12202">
+                        <big>Emprically Measuring Concentration: Fundamental Limits on Intrinsic Robustness </big></a>
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Saeed Mahloujifar*, Xiao Zhang*, Mohammad Mahmoody, and David Evans.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2019 (spotlight).
+                        </li>
+                    </div>
+
+                    <div class="feature-item">                  
+						<li>                            
+						<a  style = "color:#007bff; font-style:italic;"  href="http://proceedings.mlr.press/v97/mahloujifar19a/mahloujifar19a.pdf">
+						<big>Universal Multi-party Poisoning Attacks </big></a>
+						<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [&alpha;&beta;] Saeed Mahloujifar, Mohammad Mahmoody, and Ameer Mohammed.
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; International Conference on Machine Learning (<b>ICML</b>) 2019.
+                        </li>
+                    </div>
+
+
+	  				<div class="feature-item">
+						<li>                            
+						<a  style = "color:#007bff; font-style:italic;" href="https://arxiv.org/pdf/1810.01407.pdf">
+						<big> Can Adversarially Robust Learning Leverage Computational Hardness?</big></a>
+						<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [&alpha;&beta;] Saeed Mahloujifar and  Mohammad Mahmoody.
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Algorithmic Learning Theory (<b>ALT</b>), 2019.
+						</li>
+					</div>
+
+
+
+					<div class="feature-item">
+						<li>                            
+						<a  style = "color:#007bff; font-style:italic;"  href="https://arxiv.org/pdf/1809.03063.pdf">
+						<big> The Curse of Concentration in Robust Learning:  Evasion and Poisoning Attacks from Concentration of Measure</big></a>
+						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Saeed Mahloujifar, Dimitrios I. Diochnos, and Mohammad Mahmoody.
+						  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>AAAI</b> Conference on Artificial Intelligence, 2019.
+						</li>
+					</div>   
+
+					<div class="feature-item">               
+						<li>                            
+						<a  style = "color:#007bff; font-style:italic;"  href="https://arxiv.org/abs/1810.12272">
+						<big> Adversarial Risk and Robustness: General Definitions and Implications for the Uniform Distribution
+						</big></a>
+						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dimitrios I. Diochnos*, Saeed Mahloujifar*, and Mohammad Mahmoody.
+						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2018.
+						</li>
+                    </div>
+
+
+                    <div class="feature-item">                       
+						<li>                            
+						<a  style = "color:#007bff; font-style:italic;"  href="https://arxiv.org/pdf/1711.03707.pdf">
+						<big>Learning under p-Tampering Attacks</big></a>
+						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Saeed Mahloujifar, Dimitrios I. Diochnos, and Mohammad Mahmoody.
+						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Algorithmic Learning Theory (<b>ALT</b>), 2018.
+						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Selected to be presented at ISAIM, 2018.
+						</li>
+                    </div>
+
+
+                    <div class="feature-item">
+						<li>
+						<a  style = "color:#007bff; font-style:italic;"  href="https://eprint.iacr.org/2017/950.pdf">
+						<big>Blockwise p-Tampering Attacks on Cryptographic Primitives, Extractors, and Learners</big></a>
+						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&alpha;&beta;] Saeed Mahloujifar and Mohammad Mahmoody.
+						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Theory of Cryptography Conference (<b>TCC</b>) 2017.
+						</li>
+                    </div>
+
+
+                    <div class="feature-item">
+						<li>
+						<a  style = "color:#007bff; font-style:italic;"  href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7403524">
+						<big>Near Linear-Time Community Detection in Networks with Hardly Detectable Community Structure</big></a>
+						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aria Rezaei, Saeed Mahloujifar, and Mahdieh Soleymani.
+						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Advances in Social Networks Analysis and Mining (<b>ASONAM</b>) 2015.
+						</li>
+                    </div>
+                    <h3 class="title">Journal Publications</h3>
+                        <div class="feature-item">
+                        <li>
+                        <a  style = "color:#007bff; font-style:italic;"  href="https://link.springer.com/article/10.1007/s10472-019-09675-1">
+                        <big>Learning Under p-Tampering Poisoning Attacks</big></a>
+                         <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Saeed Mahloujifar, Dimitrios Diochnos, and Mohammad Mahmoody.
+                         <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Annals of Mathematics and Artificial Intelligence, Vol. 88, pp. 759--792, 2020.
+                        </li>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="utility-2">
+        <div class="container">
+            <div class="row">
+                    <div class="block">
+                        <hr style="margin-top:50px; margin-bottom: 2px">
+                        <h2 class="title">Contact</h2><hr style="margin-top:-5px; margin-bottom: 30px">
+			<div class="contact-info">
+
+			<h3>Mailing Address:</h3>
+Saeed Mahlouji Far <br>
+Department of Computer Science <br>
+School of Engineering & Applied Science <br>
+University of Virginia <br>
+85 Engineer's Way, P.O. Box 400740 <br>
+Charlottesville, VA 22904-4740 <br>
+			<h3 style="margin-top:20px; margin-bottom: 20px">Email:</h3>
+			<img width=600px height=100px src="images/e.png" style="margin-top:10px; margin-bottom: 40px">
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="footer">
+  <!-- <p>Footer</p> -->
+</div>
+
+</body>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</html>
