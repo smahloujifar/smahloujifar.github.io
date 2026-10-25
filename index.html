@@ -143,6 +143,26 @@ body {
 .feature-item li big {
     font-size:19px;
 }
+.pub-toggle {
+  margin: 0 0 20px 0;
+}
+.pub-toggle button {
+  font-size: 15px;
+  padding: 6px 18px;
+  margin-right: 6px;
+  border: 1px solid #4CAF50;
+  background: #ffffff;
+  color: #4CAF50;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pub-toggle button.active {
+  background: #4CAF50;
+  color: #ffffff;
+}
+.pub-toggle button:hover { opacity: 0.85; }
+.hidden { display: none; }
+
 .footer {
    /*position: fixed;*/
    height:600px;
@@ -208,10 +228,14 @@ body {
         <div class="container">
             <div class="row">
                     <hr style="margin-top:50px; margin-bottom: 2px"><h2 class="title">Publications</h2><hr style="margin-top:-6px; margin-bottom: 20px">
+                    <div class="pub-toggle">
+                        <button id="btn-selected" class="active" onclick="showPubs('selected')">Selected</button>
+                        <button id="btn-all" onclick="showPubs('all')">All publications</button>
+                    </div>
                     <p>* indicates equal contribution. [&alpha;&beta;] indicates alphabetical order.</p>
 
-		<h3 class="title">Selected Publications</h3>
-		<p>Papers on which I am a first or last author, or a second author during my time at Princeton. The full list follows below.</p>
+		<div id="pubs-selected">
+		<p>Papers on which I am a first or last author, or a second author during my time at Princeton.</p>
 
 		    <div class="feature-item">
 		    <li>
@@ -460,6 +484,8 @@ body {
 						 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Theory of Cryptography Conference (<b>TCC</b>) 2017.
 						</li>
                     </div>
+		</div>
+		<div id="pubs-all" class="hidden">
 		<h3 class="title">Preprints</h3>
 		    <div class="feature-item">
 		    <li>
@@ -742,8 +768,6 @@ body {
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;International Conference on Artificial Intelligence and Statistics (<b>AISTATS</b>) 2022
 			  </li>
 		   </div>
-
-		   </div>
 		    <div class="feature-item">
 			  <li>  
 			  <a  style = "color:#007bff; font-style:italic;"  href="https://arxiv.org/pdf/2104.09425v1.pdf">
@@ -937,6 +961,7 @@ body {
                          <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Annals of Mathematics and Artificial Intelligence, Vol. 88, pp. 759--792, 2020.
                         </li>
                     </div>
+		</div>
             </div>
         </div>
     </section>
@@ -961,6 +986,13 @@ body {
     </div>
 
 <script>
+function showPubs(which) {
+  document.getElementById("pubs-selected").classList.toggle("hidden", which !== "selected");
+  document.getElementById("pubs-all").classList.toggle("hidden", which !== "all");
+  document.getElementById("btn-selected").classList.toggle("active", which === "selected");
+  document.getElementById("btn-all").classList.toggle("active", which === "all");
+}
+
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
